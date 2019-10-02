@@ -1,39 +1,26 @@
 package com.example.demo.UnitsController;
 
 
-import java.math.BigInteger;
-import java.sql.PreparedStatement;
-import java.util.List;
-import java.util.Optional;
 
-import javax.security.auth.message.callback.PrivateKeyCallback.Request;
-import javax.websocket.Session;
+
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
-//@RestController
+
 @Controller
 public class UnitsController {
 	
 	@Autowired
 	private UnitsService unitsservice;
-//	@Autowired
-//	private Units u;
+
 	@Autowired
 	private UnitsRepository unitsrepository;
 	
